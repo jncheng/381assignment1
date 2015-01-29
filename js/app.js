@@ -73,7 +73,7 @@ var JQueryMobileFooter = React.createClass({
 
   render: function() {
     return React.DOM.div({'data-role':'footer'},
-      React.DOM.h4(null, 'Page footer')
+      React.DOM.h4(null, 'Page footerr')
     );
   }
 });
