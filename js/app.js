@@ -28,6 +28,19 @@
 /* overall score */
 var score = 0;
 
+/*function for adding to score*/
+var addScore = function()
+{
+  score++;
+  console.log(score);
+};
+
+var resetScore = function()
+{
+  score = 0;
+  console.log(score);
+};
+
 /** Main application component. */
 var App = React.createClass({
   displayName: 'App',
