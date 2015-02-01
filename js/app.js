@@ -25,8 +25,9 @@
 
 'use strict';
 
-/* overall score */
-var score = 0;
+/* score variables */
+var score = 0,
+numberOfQuestions = 5;
 
 /*function for adding to score*/
 var addScore = function()
@@ -39,6 +40,11 @@ var resetScore = function()
 {
   score = 0;
   console.log(score);
+};
+
+var totalScorePencentage = function()
+{
+  return (score / numberOfQuestions) * 100;
 };
 
 /** Main application component. */
