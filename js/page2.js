@@ -12,7 +12,10 @@ var PageTwoContent = React.createClass({
       React.DOM.p(null, 'Pick the best one.'),
       React.DOM.p(null, React.DOM.button(null, 'Panic and run around screaming')),
       React.DOM.p(null, React.DOM.button(null, 'Spread the news on social Facebook')),
+      
+       /* right answer*/
       React.DOM.p({onClick: addScore}, React.DOM.button(null, 'Keep calm')),
+     
       React.DOM.p(null, React.DOM.button(null, 'Dance')),
       React.DOM.h3(null, ''),
       JQueryMobileButton({href:'#three'}, 'Next Question'),
