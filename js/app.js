@@ -25,6 +25,9 @@
 
 'use strict';
 
+/* overall score */
+var score = 0;
+
 /** Main application component. */
 var App = React.createClass({
   displayName: 'App',
