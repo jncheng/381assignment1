@@ -7,13 +7,13 @@ var PageTwoContent = React.createClass({
 
   render: function() {
     return React.DOM.div(null,
-      React.DOM.h2(null, 'Example Question'),
-      React.DOM.p(null, 'This is a sample question'),
-      React.DOM.p(null, 'There will be 4 answers, but only 1 will be correct'),
-      React.DOM.p(null, 'Answer 1'),
-      React.DOM.p(null, 'Answer 2'),
-      React.DOM.p(null, 'Answer 3'),
-      React.DOM.p(null, 'Answer 4'),
+      React.DOM.h2(null, 'Question 2'),
+      React.DOM.p(null, 'How should you behave during an earthquake?'),
+      React.DOM.p(null, 'Pick the best one.'),
+      React.DOM.p(null, React.DOM.button(null, 'Panic and run around screaming')),
+      React.DOM.p(null, React.DOM.button(null, 'Spread the news on social Facebook')),
+      React.DOM.p({onClick: addScore}, React.DOM.button(null, 'Keep calm')),
+      React.DOM.p(null, React.DOM.button(null, 'Dance')),
       React.DOM.h3(null, ''),
       JQueryMobileButton({href:'#three'}, 'Next Question'),
       JQueryMobileButton({href:'#one'}, 'Last Question')
