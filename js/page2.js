@@ -5,7 +5,7 @@ var PageTwoContent = React.createClass({
   displayName: 'PageOneContent',
 
   render: function() {
-    return React.DOM.div(null,
+    return React.DOM.div({id:'body'},null,
       React.DOM.h2(null, 'Question 2'),
       React.DOM.p(null, 'How should you behave during an earthquake?'),
       React.DOM.p(null, 'Pick the best one.'),
@@ -17,8 +17,20 @@ var PageTwoContent = React.createClass({
      
       React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Dance')),
       React.DOM.h3(null, ''),
-      JQueryMobileButton({href:'#three'}, 'Next Question'),
-      JQueryMobileButton({href:'#one'}, 'Last Question')
+      //return React.DOM.div(null,
+      // return React.DOM.div({id: 'left-col'}, 
+      React.DOM.div({id: 'left-col'},null,
+        JQueryMobileButton({id: 'nextQ',href:'#three'}, 'Next Question')
+      ),
+      React.DOM.div({id: 'right-col'},null,
+        JQueryMobileButton({id: 'lastQ',href:'#one'}, 'Last Question')
+
+      )
+      //)
+      // );
+      // return  React.DOM.div({id: 'right-col'},
+      //   JQueryMobileButton({href:'#one'}, 'Last Question')
+      // );
     );
   }
 });
