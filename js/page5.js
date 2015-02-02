@@ -2,6 +2,10 @@
 var PageFiveContent = React.createClass({
   displayName: 'PageFiveContent',
 
+  updatePercentage: function(e) {
+    document.getElementById("percentage").innerHTML = "You got " + scorePercentage() + "%, Good job. These are the answers that you got right and wrong.";
+  },
+
   render: function() {
     return React.DOM.div(null,
       React.DOM.h2(null, 'Question 5'),
@@ -14,7 +18,7 @@ var PageFiveContent = React.createClass({
 
       /* right answer*/
       React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right'}, null,'Stormline 1-800-463-9463')),
-      JQueryMobileButton({href:'#results', 'data-rel':'dialog', 'data-transition':'pop'}, 'Finish'),
+      JQueryMobileButton({href:'#results', 'data-rel':'dialog', 'data-transition':'pop', onClick: this.updatePercentage}, 'Finish'),
       JQueryMobileButton({href:'#three'}, 'Last Question')
     );
   }
