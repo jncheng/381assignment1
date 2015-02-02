@@ -1,5 +1,4 @@
 
-
 /** Application page one component. */
 var PageTwoContent = React.createClass({
   displayName: 'PageTwoContent',
@@ -73,10 +72,10 @@ var PageTwoContent = React.createClass({
         React.DOM.h3(null, ''),
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 
-        React.DOM.div({id: 'left-col'},null,
+        React.DOM.div({id: 'right-col'},null,
           JQueryMobileButton({id: 'nextQ',href:'#three'}, 'Next Question')
         ),
-        React.DOM.div({id: 'right-col'},null,
+        React.DOM.div({id: 'left-col'},null,
           JQueryMobileButton({id: 'lastQ',href:'#one'}, 'Last Question')
 
         )
