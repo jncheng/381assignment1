@@ -26,6 +26,7 @@
 
 /* overall score */
 var score = 0;
+var numberOfQuestions = 5;
 
 /*function for adding to score*/
 var addScore = function()
@@ -39,6 +40,13 @@ var resetScore = function()
   score = 0;
   console.log(score);
 };
+
+/* returns percentage of corrent questions */
+var scorePercentage = function()
+{
+  return (socre / numberOfQuestions) * 100;
+
+}
 
 /** Main application component. */
 var App = React.createClass({
