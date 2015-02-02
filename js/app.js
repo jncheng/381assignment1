@@ -28,11 +28,18 @@
 var score = 0;
 var numberOfQuestions = 5;
 
+var currentPage = 0;
+var pageOneAnswered = false;
+
 /*function for adding to score*/
 var addScore = function()
 {
-  score++;
-  console.log(score);
+  if (currentPage==1 && !pageOneAnswered)
+  {
+    score++;
+    console.log(score);
+  }
+  
 };
 
 var resetScore = function()
@@ -44,8 +51,34 @@ var resetScore = function()
 /* returns percentage of corrent questions */
 var scorePercentage = function()
 {
-  return (socre / numberOfQuestions) * 100;
+  return (score / numberOfQuestions) * 100;
 
+}
+
+var turnColor = function(choiceId, color) {
+
+  console.log("function called");
+
+  try {
+
+      if (color == "red")
+      {
+        document.getElementById(choiceId).style.background = "#ff0000";
+      }
+
+      if (color == "green")
+      {
+        document.getElementById(choiceId).style.background = "#00ff00"
+      }
+
+      console.log("trying");
+  }
+
+  catch(err)
+  {
+      console.log(err);
+      console.log("page not generated");
+  }
 }
 
 /** Main application component. */
