@@ -4,12 +4,14 @@ var PageFourContent = React.createClass({
 
   render: function() {
     return React.DOM.div({id:'header-div'},null,
-      React.DOM.h1(null, 'O O O O O'),
+       React.DOM.div({id:'progress'}, null,
+      React.DOM.h1(null, 'o o o O o')
+      ),
       
       
       React.DOM.div({id:'body'},null,
         
-        React.DOM.h2(null, 'Question 4'),
+      
       React.DOM.p(null, 'How should you pack your extra batteries?'),
       React.DOM.p(null, 'Pick the best one.'),
       React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Wrapped together in Tin foil')),

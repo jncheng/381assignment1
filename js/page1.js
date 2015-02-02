@@ -56,13 +56,12 @@ var PageOneContent = React.createClass({
     return React.DOM.div({id:'header-div'},null,
       React.DOM.div({id:'progress'}, null,
 
-        React.DOM.h1(null, 'O O O O O')
+        React.DOM.h1(null, 'O o o o o ')
       ),
       
       
       React.DOM.div({id:'body'},null,
-        
-        React.DOM.h2(null, 'Question 1'),
+
         React.DOM.p(null, 'Which food item belongs in an earthquake emergency supplies package?'),
         React.DOM.p(null, 'Pick the best one.'),
         React.DOM.p(null, React.DOM.button({id: 'wrong_1_1', onClick: this.handleClick1},'Panic and run around screaming')),

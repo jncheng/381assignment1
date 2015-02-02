@@ -5,12 +5,14 @@ var PageThreeContent = React.createClass({
 
   render: function() {
    return React.DOM.div({id:'header-div'},null,
-      React.DOM.h1(null, 'O O O O O'),
-      
+
+       React.DOM.div({id:'progress'}, null,
+      React.DOM.h1(null, 'o o O o o')
+      ),
       
       React.DOM.div({id:'body'},null,
         
-        React.DOM.h2(null, 'Question 3'),
+      
       React.DOM.p(null, 'Where is a good place to get to during an earthquake?'),
       React.DOM.p(null, 'Pick the best one.'),
       React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Near a window')),

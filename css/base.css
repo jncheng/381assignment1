@@ -35,15 +35,18 @@ code {
 }
 
 h1, h2, h3, h4 {
-  font-weight: bold;
+  font-weight: normal;
   margin: 0 0 15px;
   padding: 0;
 }
 
 h1 {
+  font-weight: normal;
+  padding-top: 3%;
+  padding-bottom: 3%;
   text-align: center;
   border: 1px solid #808080 ;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   background-color: white;
   
@@ -164,7 +167,7 @@ $('#right').click(function() {
   background: transparent;
   position: absolute;
   left: ;
-  top:75%;
+  top:70%;
   width: 42%;
 
 }
@@ -178,7 +181,7 @@ $('#right').click(function() {
   position: absolute;
   left: 50%;
   margin-left: 3%;
-  top:75%;
+  top:70%;
   width: 42%;
 }
 
@@ -186,6 +189,7 @@ $('#right').click(function() {
 
 /*   background-image: url("../images/road_damage.jpeg");
 */
+    margin-top: 20%;
     height:100vh;
 }
 #header-div{
