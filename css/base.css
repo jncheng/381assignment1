@@ -75,11 +75,11 @@ div{
 }
 
 #wrong{
-  width: 20em;
+  width: 100%;
 }
 
 #right{
-  width: 20em;
+  width: 100%;
   
 }
 #right:visited{
@@ -103,7 +103,7 @@ $('#right').click(function() {
   border-color: #48110C;
 }
 #next{
- 
+  border-top: 1px solid #7B4A12;
   color: #771E10;
   text-shadow:none;
   border-color: #E4F6F8;
