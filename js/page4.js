@@ -4,15 +4,16 @@ var PageFourContent = React.createClass({
 
   render: function() {
     return React.DOM.div(null,
-      React.DOM.h2(null, 'Example Question'),
-      React.DOM.p(null, 'This is a sample question'),
-      React.DOM.p(null, 'There will be 4 answers, but only 1 will be correct'),
-      React.DOM.p(null, 'Answer 1'),
-      React.DOM.p(null, 'Answer 2'),
-      React.DOM.p(null, 'Answer 3'),
-      React.DOM.p(null, 'Answer 4'),
-      React.DOM.h3(null, ''),
-      JQueryMobileButton({href:'#results', 'data-rel':'dialog', 'data-transition':'pop'}, 'Finish'),
+      React.DOM.h2(null, 'Question 4'),
+      React.DOM.p(null, 'How should you pack your extra batteries?'),
+      React.DOM.p(null, 'Pick the best one.'),
+      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Wrapped together in Tin foil')),
+      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Wrapped together in a plastic bag')),
+      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Individually wrapped in Tin Foil')),
+
+      /* right answer*/
+      React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right'}, null,'Individually wrapped in plastic bags')),
+      JQueryMobileButton({href:'#five'}, 'Next Question'),
       JQueryMobileButton({href:'#three'}, 'Last Question')
     );
   }

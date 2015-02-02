@@ -1,5 +1,6 @@
-.button{
-  background-color: red;
+
+.shake{
+  
 }
 
 body {
@@ -45,7 +46,8 @@ h1 {
 }
 
 h2 {
-  border-bottom: 1px solid #eee;
+
+  border-bottom: 1px solid #7B4A12;
   font-size: 2em;
 }
 
@@ -64,13 +66,47 @@ p, ul {
 ul {
   padding-left: 30px;
 }
-#JQueryMobileButton{
-    background-color: red;
-}
 /* background stuff*/
 div{
-  background-color:;
-  color:;
+  text-shadow: none;
+  background-color: #EBC137;
+  color: #BA6222;
   
 }
 
+#wrong{
+  width: 20em;
+}
+
+#right{
+  width: 20em;
+  
+}
+#right:visited{
+  background-color: green;
+  color: green;
+
+}
+#right:active{
+  background-color: green;
+  color: green;
+
+}
+
+$('#right').click(function() {
+    $(this).toggleClass('active');
+});
+
+
+#next:hover{
+  background-color: #EBC137;
+  border-color: #48110C;
+}
+#next{
+ 
+  color: #771E10;
+  text-shadow:none;
+  border-color: #E4F6F8;
+  background-color: #E38C2D;
+  -webkit-animation-name: shake-hard; -ms-animation-name: shake-hard; animation-name: shake-hard; -webkit-animation-duration: 100ms; -ms-animation-duration: 100ms; animation-duration: 100ms; -webkit-animation-iteration-count: infinite; -ms-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; -ms-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-delay: 0s; -ms-animation-delay: 0s; animation-delay: 0s; -webkit-animation-play-state: running; -ms-animation-play-state: running; animation-play-state: running; }
+}

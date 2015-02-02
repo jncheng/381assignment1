@@ -1,5 +1,4 @@
 /**
-
  * - App
  *   |-- JQueryMobilePage (one)
  *   |   |-- JQueryMobileHeader
@@ -25,6 +24,22 @@
 
 'use strict';
 
+/* overall score */
+var score = 0;
+
+/*function for adding to score*/
+var addScore = function()
+{
+  score++;
+  console.log(score);
+};
+
+var resetScore = function()
+{
+  score = 0;
+  console.log(score);
+};
+
 /** Main application component. */
 var App = React.createClass({
   displayName: 'App',
@@ -36,6 +51,7 @@ var App = React.createClass({
       JQueryMobilePage({id:'two'}, PageTwoContent(null)),
       JQueryMobilePage({id:'three'}, PageThreeContent(null)),
       JQueryMobilePage({id:'four'}, PageFourContent(null)),
+      JQueryMobilePage({id:'five'}, PageFiveContent(null)),
       JQueryMobilePage({id:'results', headerTheme:'b'}, PageResultsContent(null))
     );
   }

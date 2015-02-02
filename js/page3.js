@@ -4,16 +4,22 @@ var PageThreeContent = React.createClass({
 
   render: function() {
     return React.DOM.div(null,
-      React.DOM.h2(null, 'Example Question'),
-      React.DOM.p(null, 'This is a sample question'),
-      React.DOM.p(null, 'There will be 4 answers, but only 1 will be correct'),
-      React.DOM.p(null, 'Answer 1'),
-      React.DOM.p(null, 'Answer 2'),
-      React.DOM.p(null, 'Answer 3'),
-      React.DOM.p(null, 'Answer 4'),
+      React.DOM.h2(null, 'Question 3'),
+      React.DOM.p(null, 'Where is a good place to get to during an earthquake?'),
+      React.DOM.p(null, 'Pick the best one.'),
+      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Near a window')),
+      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'On a roof')),
+      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'In your bed')),
+
+      /* right answer*/
+      React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right'}, null,'Under a table')),
+      
       React.DOM.h3(null, ''),
       JQueryMobileButton({href:'#four'}, 'Next Question'),
-      JQueryMobileButton({href:'#two'}, 'Last Question')
+      JQueryMobileButton({href:'#two'}, 'Previous Question')
     );
   }
 });
+
+
+
