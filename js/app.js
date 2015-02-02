@@ -125,26 +125,26 @@ var JQueryMobileContent = React.createClass({
 });
 
 /** jQuery Mobile footer component. */
-var JQueryMobileFooter = React.createClass({
-  displayName: 'JQueryMobileFooter',
+// var JQueryMobileFooter = React.createClass({
+//   displayName: 'JQueryMobileFooter',
 
-  render: function() {
-    return React.DOM.div({'data-role':'footer'},
-      React.DOM.h4(null, 'Page footerr')
-    );
-  }
-});
+//   render: function() {
+//     return React.DOM.div({'data-role':'footer'},
+//       React.DOM.h4(null, 'Page footerr')
+//     );
+//   }
+// });
 
 /** jQuery Mobile header component. */
-var JQueryMobileHeader = React.createClass({
-  displayName: 'JQueryMobileHeader',
+// var JQueryMobileHeader = React.createClass({
+//   displayName: 'JQueryMobileHeader',
 
-  render: function() {
-    return React.DOM.div({'data-role':'header', 'data-theme':this.props.headerTheme},
-      React.DOM.h1(null, this.props.title)
-    );
-  }
-});
+//   render: function() {
+//     return React.DOM.div({'data-role':'header', 'data-theme':this.props.headerTheme},
+//       React.DOM.h1(null, this.props.title)
+//     );
+//   }
+// });
 
 /** jQuery Mobile page component. */
 var JQueryMobilePage = React.createClass({
@@ -156,9 +156,9 @@ var JQueryMobilePage = React.createClass({
 
   render: function() {
     return this.transferPropsTo(React.DOM.div(null,
-      JQueryMobileHeader({title:'Question ' + this.props.id, headerTheme:this.props.headerTheme}),
-      JQueryMobileContent(null, this.props.children),
-      JQueryMobileFooter(null)
+      // JQueryMobileHeader({title:'Question ' + this.props.id, headerTheme:this.props.headerTheme}),
+      JQueryMobileContent(null, this.props.children)
+      // JQueryMobileFooter(null)
     ));
   }
 });
