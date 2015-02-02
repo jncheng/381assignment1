@@ -141,15 +141,15 @@ var JQueryMobileContent = React.createClass({
 // });
 
 /** jQuery Mobile header component. */
-// var JQueryMobileHeader = React.createClass({
-//   displayName: 'JQueryMobileHeader',
+var JQueryMobileHeader = React.createClass({
+  displayName: 'JQueryMobileHeader',
 
-//   render: function() {
-//     return React.DOM.div({'data-role':'header', 'data-theme':this.props.headerTheme},
-//       React.DOM.h1(null, this.props.title)
-//     );
-//   }
-// });
+  render: function() {
+    return React.DOM.div({'data-role':'header', 'data-theme':this.props.headerTheme},
+      React.DOM.h1(null, this.props.title)
+    );
+  }
+});
 
 /** jQuery Mobile page component. */
 var JQueryMobilePage = React.createClass({
@@ -161,7 +161,7 @@ var JQueryMobilePage = React.createClass({
 
   render: function() {
     return this.transferPropsTo(React.DOM.div(null,
-      // JQueryMobileHeader({title:'Question ' + this.props.id, headerTheme:this.props.headerTheme}),
+      // JQueryMobileHeader({title:'Question ' }),
       JQueryMobileContent(null, this.props.children)
       // JQueryMobileFooter(null)
     ));
@@ -173,7 +173,8 @@ var PageHomeContent = React.createClass({
   displayName: 'PageHomeContent',
 
   render: function() {
-    return React.DOM.div(null,
+    JQueryMobileHeader({title:'Question ' });
+    return React.DOM.div({id:'body'},null,
       React.DOM.h2(null, 'Home'),
       React.DOM.p(null, 'This is a quiz to help you determine how prepared you are for an earthquake.'),
       React.DOM.p(null, ' An earthquake is inevitable in the near future'),

@@ -6,11 +6,12 @@
 body {
 
   background-color: black;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;;
   font-size: 15px;
   line-height: 1.7;
-  margin: 0;
-  padding: 30px;
+  margin: 0%;
+  padding:0%;
+
 }
 
 a {
@@ -25,11 +26,12 @@ a:hover {
 code {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 0px;
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   font-size: 12px;
   margin: 0 2px;
-  padding: 0px 5px;
+  padding: 0px 0px;
+
 }
 
 h1, h2, h3, h4 {
@@ -43,16 +45,18 @@ h1 {
   border: 1px solid #808080 ;
   font-size: 1.5em;
   font-weight: bold;
-  background-color: #D3D3D3;
+  background-color: white;
   
-  padding: 0;
-  border-radius: 25px;
+/*  padding: 0;
+  border-radius: 25px;*/
 }
 
 h2 {
-
+  margin-top: 15%;
   border-bottom: 1px solid #7B4A12;
-  font-size: 2em;
+  font-size: 1.5em;
+
+ font-weight: normal;
 }
 
 h3 {
@@ -64,7 +68,7 @@ h4 {
 }
 
 p, ul {
-  margin: 15px 0;
+  /*margin: 15px 0;*/
 }
 
 ul {
@@ -73,9 +77,46 @@ ul {
 /* background stuff*/
 div{
   text-shadow: none;
-  background-color: #EBC137;
-  color: #BA6222;
+   font-weight: normal;
+     background-color: #FFCC00;
+  color: #000000;
   
+}
+
+#wrong_1_1{
+ font-weight: normal;
+  font-style: normal;
+    text-shadow: none;
+/*background-color: #D3D3D3;*/
+}
+#wrong_1_2{
+    text-shadow: none;
+     font-weight: normal;
+}
+#wrong_1_3{
+    text-shadow: none;
+     font-weight: normal;
+}
+#right_1{
+    text-shadow: none;
+     font-weight: normal;
+}
+
+#wrong_2_1{
+    text-shadow: none;
+     font-weight: normal;
+}
+#wrong_2_2{
+    text-shadow: none;
+     font-weight: normal;
+}
+#wrong_2_3{
+    text-shadow: none; 
+    font-weight: normal;
+}
+#right_2{
+    text-shadow: none;
+    font-weight: normal;
 }
 
 #wrong{
@@ -120,11 +161,11 @@ $('#right').click(function() {
 }
 
 #left-col{
- 
+  background: transparent;
   position: absolute;
   left: ;
   top:75%;
-  width: 45%;
+  width: 42%;
 
 }
 #nextq{
@@ -133,22 +174,33 @@ $('#right').click(function() {
 
 #right-col{
 
+  background: transparent;
   position: absolute;
   left: 50%;
   margin-left: 3%;
   top:75%;
-  width: 45%;
+  width: 42%;
 }
 
 #body{
- 
+
+/*   background-image: url("../images/road_damage.jpeg");
+*/
     height:100vh;
 }
 #header-div{
-
- 
+  background-color: red;
+  padding: 0%;
   margin: 0%;
   
+}
+#progress{
+  
+  top:0%;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+
 }
 
 #footer{

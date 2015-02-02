@@ -8,8 +8,8 @@ var PageOneContent = React.createClass({
     currentPage = 1;
 
     if (!pageOneAnswered) {
-      document.getElementById('wrong_1_1').style.background = "#ff0000";
-      document.getElementById('right_1').style.background = "#00ff00";
+      document.getElementById('wrong_1_1').style.color = "#ff0000";
+      document.getElementById('right_1').style.color = "#00ff00";
     }
     
     pageOneAnswered = true;
@@ -20,8 +20,8 @@ var PageOneContent = React.createClass({
     currentPage = 1;
 
     if (!pageOneAnswered) {
-      document.getElementById('wrong_1_2').style.background = "#ff0000";
-      document.getElementById('right_1').style.background = "#00ff00";
+      document.getElementById('wrong_1_2').style.color = "#ff0000";
+      document.getElementById('right_1').style.color = "#00ff00";
     }
 
     pageOneAnswered = true;
@@ -32,8 +32,8 @@ var PageOneContent = React.createClass({
     currentPage = 1;
 
     if (!pageOneAnswered) {
-      document.getElementById('wrong_1_3').style.background = "#ff0000";
-      document.getElementById('right_1').style.background = "#00ff00";
+      document.getElementById('wrong_1_3').style.color = "#ff0000";
+      document.getElementById('right_1').style.color= "#00ff00";
     }
 
     pageOneAnswered = true;
@@ -44,7 +44,7 @@ var PageOneContent = React.createClass({
     currentPage = 1;
 
     if (!pageOneAnswered) {
-      document.getElementById('right_1').style.background = "#00ff00";
+      document.getElementById('right_1').style.color = "#00ff00";
       score++;
       console.log(score);
     }
@@ -54,7 +54,10 @@ var PageOneContent = React.createClass({
 
   render: function() {
     return React.DOM.div({id:'header-div'},null,
-      React.DOM.h1(null, 'O O O O O'),
+      React.DOM.div({id:'progress'}, null,
+
+        React.DOM.h1(null, 'O O O O O')
+      ),
       
       
       React.DOM.div({id:'body'},null,
