@@ -24,8 +24,14 @@
 
 'use strict';
 
+<<<<<<< HEAD
 /* overall score */
 var score = 0;
+=======
+/* score variables */
+var score = 0,
+numberOfQuestions = 5;
+>>>>>>> FETCH_HEAD
 
 /*function for adding to score*/
 var addScore = function()
@@ -40,6 +46,14 @@ var resetScore = function()
   console.log(score);
 };
 
+<<<<<<< HEAD
+=======
+var totalScorePencentage = function()
+{
+  return (score / numberOfQuestions) * 100;
+};
+
+>>>>>>> FETCH_HEAD
 /** Main application component. */
 var App = React.createClass({
   displayName: 'App',
