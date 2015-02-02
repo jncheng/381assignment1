@@ -2,7 +2,56 @@
 
 /** Application page one component. */
 var PageTwoContent = React.createClass({
-  displayName: 'PageOneContent',
+  displayName: 'PageTwoContent',
+
+  handleClick1: function(id) {
+        console.log("hello");
+        currentPage = 2;
+
+        if (!pageTwoAnswered) {
+          document.getElementById('wrong_2_1').style.background = "#ff0000";
+          document.getElementById('right_2').style.background = "#00ff00";
+        }
+        
+        pageTwoAnswered = true;
+      },
+
+      handleClick2: function(id) {
+        console.log("hello");
+        currentPage = 2;
+
+        if (!pageTwoAnswered) {
+          document.getElementById('wrong_2_2').style.background = "#ff0000";
+          document.getElementById('right_2').style.background = "#00ff00";
+        }
+
+        pageTwoAnswered = true;
+      },
+
+      handleClick3: function(id) {
+        console.log("hello");
+        currentPage = 2;
+
+        if (!pageTwoAnswered) {
+          document.getElementById('wrong_2_3').style.background = "#ff0000";
+          document.getElementById('right_2').style.background = "#00ff00";
+        }
+
+        pageTwoAnswered = true;
+      },
+
+      handleClick4: function(id) {
+        console.log(score);
+        currentPage = 2;
+
+        if (!pageTwoAnswered) {
+          document.getElementById('right_2').style.background = "#00ff00";
+          score++;
+          console.log(score);
+        }
+
+        pageTwoAnswered = true;
+      },
 
   render: function() {
     return React.DOM.div({id:'header-div'},null,
@@ -14,13 +63,13 @@ var PageTwoContent = React.createClass({
         React.DOM.h2(null, 'Question 2'),
         React.DOM.p(null, 'How should you behave during an earthquake?'),
         React.DOM.p(null, 'Pick the best one.'),
-        React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Panic and run around screaming')),
-        React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Spread the news on social Facebook')),
+        React.DOM.p(null, React.DOM.button({id: 'wrong_2_1', onClick: this.handleClick1},null, 'Panic and run around screaming')),
+        React.DOM.p(null, React.DOM.button({id: 'wrong_2_2', onClick: this.handleClick2},null, 'Spread the news on social Facebook')),
         
          /* right answer*/
-        React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right'}, null, 'Keep calm')),
+        React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right_2', onClick: this.handleClick4}, null, 'Keep calm')),
        
-        React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Dance')),
+        React.DOM.p(null, React.DOM.button({id: 'wrong_2_3', onClick: this.handleClick3},null, 'Dance')),
         React.DOM.h3(null, ''),
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 

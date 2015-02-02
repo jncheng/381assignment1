@@ -30,6 +30,11 @@ var numberOfQuestions = 5;
 
 var currentPage = 0;
 var pageOneAnswered = false;
+var pageTwoAnswered = false;
+var pageThreeAnswered = false;
+var pageFourAnswered = false;
+var pageFiveAnswered = false;
+
 
 /*function for adding to score*/
 var addScore = function()
