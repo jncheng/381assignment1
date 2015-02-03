@@ -3,7 +3,21 @@ var PageFiveContent = React.createClass({
   displayName: 'PageFiveContent',
 
   updatePercentage: function(e) {
-    document.getElementById("percentage").innerHTML = "You got " + scorePercentage() + "%, Good job. These are the answers that you got right and wrong.";
+    document.getElementById("percentage").innerHTML = "You got " + scorePercentage() + "% of the questions right.";
+    
+    //win
+    if (scorePercentage() >= 50)
+    {
+      document.getElementById("readiness").innerHTML = "You are prepared for an earthquake!";
+    }
+
+    //lose
+    else
+    {
+      document.getElementById("readiness").className = "shake shake-constant shake-hard";
+      document.getElementById("readiness").innerHTML = "You are NOT prepared!";
+    }
+
   },
 
   render: function() {
