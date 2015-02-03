@@ -52,6 +52,7 @@ var PageOneContent = React.createClass({
     pageOneAnswered = true;
   },
 
+
   render: function() {
     return React.DOM.div({id:'header-div'},null,
       React.DOM.div({id:'progress'}, null,
@@ -63,19 +64,19 @@ var PageOneContent = React.createClass({
       React.DOM.div({id:'body'},null,
 
         React.DOM.p(null, 'Which food item belongs in an earthquake emergency supplies package?'),
-        React.DOM.p(null, 'Pick the best one.'),
-        React.DOM.p(null, React.DOM.button({id: 'wrong_1_1', onClick: this.handleClick1},'Panic and run around screaming')),
-        React.DOM.p(null, React.DOM.button({id: 'wrong_1_2', onClick: this.handleClick2},null, 'Spread the news on social Facebook')),
+       
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_1', onClick: this.handleClick1},'Panic and run around screaming')),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_2', onClick: this.handleClick2},null, 'Spread the news on social Facebook')),
         
          /* right answer*/
-        React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right_1', onClick: this.handleClick4},null, 'Keep calm')),
+        React.DOM.p({onClick: addScore}, React.DOM.button({className: 'answers',id: 'right_1', onClick: this.handleClick4},null, 'Keep calm')),
        
-        React.DOM.p(null, React.DOM.button({id: 'wrong_1_3', onClick: this.handleClick3},null, 'Dance')),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_3', onClick: this.handleClick3},null, 'Dance')),
         React.DOM.h3(null, ''),
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 
         React.DOM.div({id: 'right-col'},null,
-          JQueryMobileButton({id: 'nextQ',href:'#two'}, 'Next Question')
+          JQueryMobileButton({id: 'nextQ',href:'#two'}, '>')
         ),
         React.DOM.div({id: 'left-col'},null,
           JQueryMobileButton({id: 'lastQ',href:'#home'}, 'Home')

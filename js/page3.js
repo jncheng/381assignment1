@@ -15,21 +15,21 @@ var PageThreeContent = React.createClass({
       
       React.DOM.p(null, 'Where is a good place to get to during an earthquake?'),
       React.DOM.p(null, 'Pick the best one.'),
-      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'Near a window')),
-      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'On a roof')),
-      React.DOM.p(null, React.DOM.button({id: 'wrong'},null, 'In your bed')),
+      React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_3_1'},null, 'Near a window')),
+      React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_3_2'},null, 'On a roof')),
+      React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_3_3'},null, 'In your bed')),
 
       /* right answer*/
-      React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right'}, null,'Under a table')),
+      React.DOM.p({onClick: addScore}, React.DOM.button({className: 'answers',id: 'right_3'}, null,'Under a table')),
       
       React.DOM.h3(null, ''),
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 
         React.DOM.div({id: 'right-col'},null,
-          JQueryMobileButton({id: 'nextQ',href:'#four'}, 'Next Question')
+          JQueryMobileButton({id: 'nextQ',href:'#four'}, '>')
         ),
         React.DOM.div({id: 'left-col'},null,
-          JQueryMobileButton({id: 'lastQ',href:'#two'}, 'Previous Question')
+          JQueryMobileButton({id: 'lastQ',href:'#two'}, '<')
 
         )
       //)

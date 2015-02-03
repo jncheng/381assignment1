@@ -7,10 +7,10 @@ body {
 
   background-color: black;
   font-family: Tahoma, Helvetica, Arial, sans-serif;;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.7;
-  margin: 0%;
-  padding:0%;
+  margin: 3%;
+  padding:3%;
 
 }
 
@@ -41,14 +41,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+
+  background-image: url("../progressbar/pgbq1.png");
   font-weight: normal;
   padding-top: 3%;
   padding-bottom: 3%;
   text-align: center;
-  border: 1px solid #808080 ;
+ /* border: 1px solid black ;*/
   font-size: 1em;
   font-weight: bold;
-  background-color: white;
+  background-color: #FFCC00;
+  color: black;
   
 /*  padding: 0;
   border-radius: 25px;*/
@@ -79,56 +82,29 @@ ul {
 }
 /* background stuff*/
 div{
+/*    background: linear-gradient(to bottom, #696969 , #A9A9A9);*/
+
   text-shadow: none;
    font-weight: normal;
-     background-color: #FFCC00;
-  color: #000000;
+
+     background-color: #DCDCDC;
+  color: black;
   
 }
-
-#wrong_1_1{
- font-weight: normal;
-  font-style: normal;
-    text-shadow: none;
-/*background-color: #D3D3D3;*/
-}
-#wrong_1_2{
-    text-shadow: none;
-     font-weight: normal;
-}
-#wrong_1_3{
-    text-shadow: none;
-     font-weight: normal;
-}
-#right_1{
-    text-shadow: none;
-     font-weight: normal;
+button{
+  margin: 0px;
 }
 
-#wrong_2_1{
-    text-shadow: none;
-     font-weight: normal;
-}
-#wrong_2_2{
-    text-shadow: none;
-     font-weight: normal;
-}
-#wrong_2_3{
-    text-shadow: none; 
-    font-weight: normal;
-}
-#right_2{
+.answers{
     text-shadow: none;
     font-weight: normal;
-}
+    font-size: 20px;
+    margin:1px;
+    font-weight: bold;
+    
+/*    padding-top: 5px;
+    padding-bottom: 5px;*/
 
-#wrong{
-  width: 100%;
-}
-
-#right{
-  width: 100%;
-  
 }
 #right:visited{
   background-color: green;
@@ -167,7 +143,7 @@ $('#right').click(function() {
   background: transparent;
   position: absolute;
   left: ;
-  top:70%;
+  top:73%;
   width: 42%;
 
 }
@@ -181,25 +157,29 @@ $('#right').click(function() {
   position: absolute;
   left: 50%;
   margin-left: 3%;
-  top:70%;
+  top:73%;
   width: 42%;
 }
 
 #body{
-
+   background: transparent;
 /*   background-image: url("../images/road_damage.jpeg");
 */
     margin-top: 20%;
     height:100vh;
+
 }
 #header-div{
-  background-color: red;
+   background: transparent;
+
   padding: 0%;
   margin: 0%;
   
 }
 #progress{
-  
+  /*background-image: url("../progressbar/pgbq1.png");*/
+   background: transparent;
+
   top:0%;
   left: 0%;
   position: absolute;
@@ -211,5 +191,9 @@ $('#right').click(function() {
   position: absolute;
   top:90%;
   width: 100%;
+}
+
+#p2 {
+  margin-bottom: 15%;
 }
 
