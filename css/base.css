@@ -135,7 +135,7 @@ $('#right').click(function() {
   background-color: #E38C2D;
   -webkit-animation-name: shake-hard; -ms-animation-name: shake-hard; animation-name: shake-hard; -webkit-animation-duration: 100ms; -ms-animation-duration: 100ms; animation-duration: 100ms; -webkit-animation-iteration-count: infinite; -ms-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; -ms-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-delay: 0s; -ms-animation-delay: 0s; animation-delay: 0s; -webkit-animation-play-state: running; -ms-animation-play-state: running; animation-play-state: running; }
 }
-#nextQ{
+.nextQ{
   width: 30%;
 }
 
@@ -147,8 +147,8 @@ $('#right').click(function() {
   width: 42%;
 
 }
-#nextq{
-  width: 30%;
+#nextQ_1{
+  
 }
 
 #right-col{

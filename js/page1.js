@@ -10,6 +10,7 @@ var PageOneContent = React.createClass({
     if (!pageOneAnswered) {
       document.getElementById('wrong_1_1').style.color = "#ff0000";
       document.getElementById('right_1').style.color = "#00ff00";
+      document.getElementById('nextQ_1').style.background = "#33CCFF";
     }
     
     pageOneAnswered = true;
@@ -22,6 +23,7 @@ var PageOneContent = React.createClass({
     if (!pageOneAnswered) {
       document.getElementById('wrong_1_2').style.color = "#ff0000";
       document.getElementById('right_1').style.color = "#00ff00";
+      document.getElementById('nextQ_1').style.background = "#33CCFF";
     }
 
     pageOneAnswered = true;
@@ -34,6 +36,7 @@ var PageOneContent = React.createClass({
     if (!pageOneAnswered) {
       document.getElementById('wrong_1_3').style.color = "#ff0000";
       document.getElementById('right_1').style.color= "#00ff00";
+      document.getElementById('nextQ_1').style.background = "#33CCFF";
     }
 
     pageOneAnswered = true;
@@ -45,7 +48,7 @@ var PageOneContent = React.createClass({
 
     if (!pageOneAnswered) {
       document.getElementById('right_1').style.color = "#00ff00";
-      document.getElementById('nextQ').style.background = "#33CCFF";
+      document.getElementById('nextQ_1').style.background = "#33CCFF";
       score++;
       console.log(score);
     }
@@ -64,7 +67,7 @@ var PageOneContent = React.createClass({
       
       React.DOM.div({id:'body'},null,
 
-        React.DOM.p(null, 'Which food item belongs in an earthquake emergency supplies package?'),
+        React.DOM.p(null, 'Which belongs in an earthquake emergency supplies package?'),
 
        
         React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_1', onClick: this.handleClick1},'Meat loaf')),
@@ -79,7 +82,7 @@ var PageOneContent = React.createClass({
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 
         React.DOM.div({id: 'right-col'},null,
-          JQueryMobileButton({id: 'nextQ',href:'#two'}, '>')
+          JQueryMobileButton({id: 'nextQ_1',href:'#two'}, '>')
         ),
         React.DOM.div({id: 'left-col'},null,
           JQueryMobileButton({id: 'lastQ',href:'#home'}, 'Home')
