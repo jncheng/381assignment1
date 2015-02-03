@@ -78,11 +78,11 @@ var PageFiveContent = React.createClass({
       React.DOM.div({id:'progress'}, null,
       React.DOM.h1(null, 
 
-          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
-          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
-          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
-          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
-          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_80.png'})
+          React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}),
+          React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}),
+          React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}),
+          React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}),
+          React.DOM.img({className: 'progressImg', src: circleImg_active.src})
 
         )
       ),
