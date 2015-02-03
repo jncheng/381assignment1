@@ -45,6 +45,7 @@ var PageOneContent = React.createClass({
 
     if (!pageOneAnswered) {
       document.getElementById('right_1').style.color = "#00ff00";
+      document.getElementById('nextQ').style.background = "#33CCFF";
       score++;
       console.log(score);
     }
@@ -64,13 +65,13 @@ var PageOneContent = React.createClass({
 
         React.DOM.p(null, 'Which food item belongs in an earthquake emergency supplies package?'),
         React.DOM.p(null, 'Pick the best one.'),
-        React.DOM.p(null, React.DOM.button({id: 'wrong_1_1', onClick: this.handleClick1},'Panic and run around screaming')),
-        React.DOM.p(null, React.DOM.button({id: 'wrong_1_2', onClick: this.handleClick2},null, 'Spread the news on social Facebook')),
+        React.DOM.p(null, React.DOM.button({id: 'wrong_1_1', onClick: this.handleClick1},'Meat loaf')),
+        React.DOM.p(null, React.DOM.button({id: 'wrong_1_2', onClick: this.handleClick2},null, 'Watermelon')),
         
          /* right answer*/
-        React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right_1', onClick: this.handleClick4},null, 'Keep calm')),
+        React.DOM.p({onClick: addScore}, React.DOM.button({id: 'right_1', onClick: this.handleClick4},null, 'Trail mix')),
        
-        React.DOM.p(null, React.DOM.button({id: 'wrong_1_3', onClick: this.handleClick3},null, 'Dance')),
+        React.DOM.p(null, React.DOM.button({id: 'wrong_1_3', onClick: this.handleClick3},null, 'Pineapple')),
         React.DOM.h3(null, ''),
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 

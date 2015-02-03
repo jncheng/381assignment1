@@ -2,6 +2,10 @@
 var PageResultsContent = React.createClass({
   displayName: 'PageResultsContent',
 
+  reloadPage: function(e) {
+    document.location.reload(true);
+  },
+
   render: function() {
     return React.DOM.div(null,
       React.DOM.h2(null, 'Results'),
@@ -10,7 +14,10 @@ var PageResultsContent = React.createClass({
       // React.DOM.p(null, 'Question 2 right, answer...'),
       // React.DOM.p(null, 'Question 3 right, answer...'),
       // React.DOM.p(null, 'Question 4 right, answer...'),
-      JQueryMobileButton({href:'#home', onClick:"window.location.reload()"}, 'Show page "home"')
+
+
+      //JQueryMobileButton({href: #home}, 'Show page "home"')
+      JQueryMobileButton({onClick:this.reloadPage}, 'Show page "home"')
     );
   }
 });
