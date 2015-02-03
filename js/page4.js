@@ -58,7 +58,16 @@ var PageFourContent = React.createClass({
   render: function() {
     return React.DOM.div({id:'header-div'},null,
        React.DOM.div({id:'progress'}, null,
-      React.DOM.h1(null, 'o o o O o')
+      React.DOM.h1(null, 
+
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_80.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'})
+
+
+        )
       ),
       
       

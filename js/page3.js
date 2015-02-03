@@ -60,7 +60,15 @@ var PageThreeContent = React.createClass({
    return React.DOM.div({id:'header-div'},null,
 
        React.DOM.div({id:'progress'}, null,
-      React.DOM.h1(null, 'o o O o o')
+      React.DOM.h1(null, 
+
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_80.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'}),
+          React.DOM.img({className: 'progressImg', src: '/progressbar/circle_white_40.png'})
+
+        )
       ),
       
       React.DOM.div({id:'body'},null,
