@@ -70,15 +70,8 @@ var PageOneContent = React.createClass({
             React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}),
             React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}),
             React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}),
-            React.DOM.img({className: 'progressImg', src: circleImg_inactive.src})
-          
+            React.DOM.img({className: 'progressImg', src: circleImg_inactive.src}) 
         )
-
-        
-        
-        
-        
-        
       ),
       
       
