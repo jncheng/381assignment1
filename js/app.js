@@ -173,14 +173,23 @@ var PageHomeContent = React.createClass({
   displayName: 'PageHomeContent',
 
   render: function() {
-    JQueryMobileHeader({title:'Question ' });
-    return React.DOM.div({id:'body'},null,
-      React.DOM.h2(null, 'Home'),
-      React.DOM.p(null, 'This is a quiz to help you determine how prepared you are for an earthquake.'),
-      React.DOM.p(null, ' An earthquake is inevitable in the near future'),
-      React.DOM.p(null, 'Follow along and answer the questions, your result will be shown once you finish the quiz.'),
-      React.DOM.h3(null, 'Show internal pages:'),
-      JQueryMobileButton({href:'#one'}, 'Begin quiz')
+    return React.DOM.div({id:'header-div'},null,
+      React.DOM.div({id:'progress'}, null,
+
+        React.DOM.h1(null, 'QuakeR')
+      ),
+      
+      
+      
+      React.DOM.div({id:'body'},null,
+
+      
+        React.DOM.p(null, 'This is a quiz to help you determine how prepared you are for an earthquake.'),
+        React.DOM.p(null, ' An earthquake is inevitable in the near future'),
+        React.DOM.p(null, 'Follow along and answer the questions, your result will be shown once you finish the quiz.'),
+        React.DOM.h3(null, 'Show internal pages:'),
+        JQueryMobileButton({href:'#one'}, 'Begin quiz')
+      )
     );
   }
 });
