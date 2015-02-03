@@ -86,6 +86,15 @@ var turnColor = function(choiceId, color) {
   }
 }
 
+/**load progress img*/
+var circleImg_active = new Image();
+circleImg_active.src = 'progressbar/circle_white_80.png';
+circleImg_active.alt = 'circleFilled';
+
+var circleImg_inactive = new Image();
+circleImg_inactive.src = 'progressbar/circle_white_40.png';
+circleImg_inactive.alt = 'circleFilled';
+
 /** Main application component. */
 var App = React.createClass({
   displayName: 'App',
