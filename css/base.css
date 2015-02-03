@@ -85,9 +85,9 @@ div{
 /*    background: linear-gradient(to bottom, #696969 , #A9A9A9);*/
 
   text-shadow: none;
-   font-weight: normal;
+  font-weight: normal;
 
-     background-color: #DCDCDC;
+  background-color: #DCDCDC;
   color: black;
   
 }
@@ -160,6 +160,19 @@ $('#right').click(function() {
   top:73%;
   width: 42%;
 }
+
+#body-div{
+   
+   background-image: url("../images/frontpage_earthquakesmall.png");
+  background-size: 100%;
+   background-color: #DCDCDC;
+   opacity: 50%;
+  background-repeat: no-repeat;
+
+
+padding: 0%;
+  margin: 0%;
+  }
 
 #body{
    background: transparent;

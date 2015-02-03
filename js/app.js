@@ -173,7 +173,7 @@ var PageHomeContent = React.createClass({
   displayName: 'PageHomeContent',
 
   render: function() {
-    return React.DOM.div({id:'header-div'},null,
+    return React.DOM.div({id:'body-div'},null,
       React.DOM.div({id:'progress'}, null,
 
         React.DOM.h1(null, 'QuakeR')

@@ -76,7 +76,7 @@ var PageFiveContent = React.createClass({
   render: function() {
     return React.DOM.div({id:'header-div'},null,
       React.DOM.div({id:'progress'}, null,
-      React.DOM.h1(null, 'o O o o o')
+      React.DOM.h1(null, 'o o o o O')
       ),
       
       React.DOM.div({id:'body'},null,
