@@ -89,7 +89,7 @@ var PageFiveContent = React.createClass({
       
       React.DOM.div({id:'body'},null,
         
-      React.DOM.p(null, 'What phone number should you call if there is an earthquake?'),
+      React.DOM.p(null, 'which phone number should you call if there is an earthquake?'),
       React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_5_1', onClick: this.handleClick1},null, 'Emergency Fire 9-1-1')),
       React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_5_2', onClick: this.handleClick2},null, 'Emergency Police 9-1-1')),
       React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_5_3', onClick: this.handleClick3},null, 'Local News 604-608-2868')),

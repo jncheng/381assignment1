@@ -77,8 +77,8 @@ var PageTwoContent = React.createClass({
         
         
         React.DOM.p(null, 'How should you behave during an earthquake?'),
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_1', onClick: this.handleClick1},null, 'Panic and run around')),
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_2', onClick: this.handleClick2},null, 'Go on the Facebook')),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_1', onClick: this.handleClick1},null, 'Panic and run')),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_2', onClick: this.handleClick2},null, 'Go on Facebook')),
         
          /* right answer*/
         React.DOM.p({onClick: addScore}, React.DOM.button({className: 'answers',id: 'right_2', onClick: this.handleClick4}, null, 'Keep calm')),
