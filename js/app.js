@@ -194,9 +194,9 @@ var PageHomeContent = React.createClass({
       React.DOM.div({id:'body'},null,
 
       
-        React.DOM.p(null, 'This is a quiz to help you determine how prepared you are for an earthquake.'),
-        React.DOM.p(null, ' An earthquake is inevitable in the near future'),
-        React.DOM.p(null, 'Follow along and answer the questions, your result will be shown once you finish the quiz.'),
+        React.DOM.p({id: 'bigone1'},null, 'Are you ready for'),
+        React.DOM.p({id: 'bigone2'},null, '"THE BIG ONE?"'),
+        React.DOM.p({id: 'bigone3'},null, 'Take the quiz and find out!'),
        
         JQueryMobileButton({href:'#one'}, 'Begin quiz'),
 

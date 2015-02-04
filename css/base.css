@@ -314,3 +314,26 @@ padding: 0%;
   margin-bottom: 15%;
 }
 
+
+
+#bigone1{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+
+#bigone2{
+  line-height: 10%;
+  font-size: 200%;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#bigone3{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
