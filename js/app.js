@@ -185,7 +185,7 @@ var PageHomeContent = React.createClass({
     return React.DOM.div({id:'body-div'},null,
       React.DOM.div({id:'homeHeader'}, null,
 
-        React.DOM.h1({classname:'shake shake-constant shake-hard'}, 'QuakeR')
+        React.DOM.h1(null, 'QuakeR')
       ),
 
       
@@ -200,7 +200,7 @@ var PageHomeContent = React.createClass({
        
         JQueryMobileButton({href:'#one'}, 'Begin quiz'),
 
-              React.DOM.div({id:'imageDiv'}, null,
+              React.DOM.div({className:'shake shake-constant shake-horizontal', id:'imageDiv'}, null,
         React.DOM.p(null, '')
 
         
