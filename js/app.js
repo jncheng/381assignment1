@@ -195,7 +195,7 @@ var PageHomeContent = React.createClass({
 
       
         React.DOM.p({id: 'bigone1'},null, 'Are you ready for'),
-        React.DOM.p({id: 'bigone2'},null, '"THE BIG ONE?"'),
+        React.DOM.p({id: 'bigone2'},null, 'THE BIG ONE?'),
         React.DOM.p({id: 'bigone3'},null, 'Take the quiz and find out!'),
        
         JQueryMobileButton({href:'#one'}, 'Begin quiz'),
