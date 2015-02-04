@@ -144,8 +144,7 @@ $('#right').click(function() {
 }
 .nextq{
   width: 30%;
-  margin-top: 10%;
-  font-size: 20px;
+
 }
 
 #left-col{
@@ -157,6 +156,43 @@ $('#right').click(function() {
   font-size: 20px;
 
 }
+#lastQ{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: normal;
+
+  
+}
+
+
+#nextQ_5{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: normal;
+
+  
+}
+
+#nextQ_4{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: normal;
+
+  
+}
+
+#nextQ_3{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: normal;
+
+  
+}
+
 #nextQ_2{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -164,6 +200,13 @@ $('#right').click(function() {
   font-weight: normal;
 
   
+}
+
+#nextQ_1{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: normal;
 }
 
 #right-col{
@@ -236,9 +279,10 @@ padding: 0%;
   position: absolute;
 
   width: 130%;
-  height: 130%;
+  height: 50%;
   opacity: 10%;
   background-image: url("../images/frontpage_earthquakesmall.png");
+  background-repeat: no-repeat;
   background-size: 100%;
 
 
