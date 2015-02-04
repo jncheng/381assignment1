@@ -165,6 +165,15 @@ $('#right').click(function() {
   
 }
 
+#homeQ{
+  padding-top: 12px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+
+  
+}
+
 
 #nextQ_5{
   padding-top: 5px;

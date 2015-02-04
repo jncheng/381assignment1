@@ -17,7 +17,7 @@ var PageResultsContent = React.createClass({
 
 
       //JQueryMobileButton({href: #home}, 'Show page "home"')
-      JQueryMobileButton({onClick:this.reloadPage}, 'Show page "home"')
+      JQueryMobileButton({onClick:this.reloadPage}, 'Try Again')
     );
   }
 });
