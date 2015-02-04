@@ -91,16 +91,23 @@ div{
   color: black;
   
 }
+button:active{
+  border: 1px solid black;
+}
 button{
   margin: 0px;
-}
 
+}
+.answers:active{
+
+}
 .answers{
     text-shadow: none;
     font-weight: normal;
     font-size: 20px;
     margin:1px;
     font-weight: bold;
+
     
 /*    padding-top: 5px;
     padding-bottom: 5px;*/
@@ -135,8 +142,10 @@ $('#right').click(function() {
   background-color: #E38C2D;
   -webkit-animation-name: shake-hard; -ms-animation-name: shake-hard; animation-name: shake-hard; -webkit-animation-duration: 100ms; -ms-animation-duration: 100ms; animation-duration: 100ms; -webkit-animation-iteration-count: infinite; -ms-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; -ms-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-delay: 0s; -ms-animation-delay: 0s; animation-delay: 0s; -webkit-animation-play-state: running; -ms-animation-play-state: running; animation-play-state: running; }
 }
-.nextQ{
+.nextq{
   width: 30%;
+  margin-top: 10%;
+  font-size: 20px;
 }
 
 #left-col{
@@ -145,9 +154,15 @@ $('#right').click(function() {
   left: ;
   top:73%;
   width: 42%;
+  font-size: 20px;
 
 }
-#nextQ_1{
+#nextQ_2{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: normal;
+
   
 }
 
@@ -163,10 +178,9 @@ $('#right').click(function() {
 
 #body-div{
    
-   background-image: url("../images/frontpage_earthquakesmall.png");
-  background-size: 100%;
-   background-color: #DCDCDC;
-   opacity: 50%;
+   background-size: 100%;
+  background-color: #DCDCDC;
+  opacity: 50%;
   background-repeat: no-repeat;
 
 
@@ -198,6 +212,36 @@ padding: 0%;
   position: absolute;
   width: 100%;
   text-align: center;
+}
+
+#homeHeader{
+  /*background-image: url("../progressbar/pgbq1.png");*/
+
+/*   background-image: url("../images/frontpage_earthquakesmall.png");
+  background-position: center; */
+
+   background: transparent;
+
+  top:0%;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+#imageDiv {
+  margin-left: -21%;
+  margin-right: 10%;
+  margin-top: -5%;
+  position: absolute;
+
+  width: 130%;
+  height: 130%;
+  opacity: 10%;
+  background-image: url("../images/frontpage_earthquakesmall.png");
+  background-size: 100%;
+
+
 }
 
 .progressImg{

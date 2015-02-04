@@ -8,7 +8,7 @@ var PageFourContent = React.createClass({
 
         if (!pageFourAnswered) {
           document.getElementById('wrong_4_1').style.color = "#ff0000";
-          document.getElementById('right_4').style.color = "#00ff00";
+          document.getElementById('right_4').style.color = "#00B233";
           document.getElementById('nextQ_4').style.background = "#33CCFF";
         }
         
@@ -21,7 +21,7 @@ var PageFourContent = React.createClass({
 
         if (!pageFourAnswered) {
           document.getElementById('wrong_4_2').style.color = "#ff0000";
-          document.getElementById('right_4').style.color = "#00ff00";
+          document.getElementById('right_4').style.color = "#00B233";
           document.getElementById('nextQ_4').style.background = "#33CCFF";
         }
 
@@ -34,7 +34,7 @@ var PageFourContent = React.createClass({
 
         if (!pageFourAnswered) {
           document.getElementById('wrong_4_3').style.color = "#ff0000";
-          document.getElementById('right_4').style.color = "#00ff00";
+          document.getElementById('right_4').style.color = "#00B233";
           document.getElementById('nextQ_4').style.background = "#33CCFF";
         }
 
@@ -46,7 +46,7 @@ var PageFourContent = React.createClass({
         currentPage = 4;
 
         if (!pageFourAnswered) {
-          document.getElementById('right_4').style.color = "#00ff00";
+          document.getElementById('right_4').style.color = "#00B233";
           document.getElementById('nextQ_4').style.background = "#33CCFF";
           score++;
           console.log(score);

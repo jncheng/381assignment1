@@ -183,10 +183,11 @@ var PageHomeContent = React.createClass({
 
   render: function() {
     return React.DOM.div({id:'body-div'},null,
-      React.DOM.div({id:'progress'}, null,
+      React.DOM.div({id:'homeHeader'}, null,
 
-        React.DOM.h1(null, 'QuakeR')
+        React.DOM.h1({classname:'shake shake-constant shake-hard'}, 'QuakeR')
       ),
+
       
       
       
@@ -196,8 +197,14 @@ var PageHomeContent = React.createClass({
         React.DOM.p(null, 'This is a quiz to help you determine how prepared you are for an earthquake.'),
         React.DOM.p(null, ' An earthquake is inevitable in the near future'),
         React.DOM.p(null, 'Follow along and answer the questions, your result will be shown once you finish the quiz.'),
-        React.DOM.h3(null, 'Show internal pages:'),
-        JQueryMobileButton({href:'#one'}, 'Begin quiz')
+       
+        JQueryMobileButton({href:'#one'}, 'Begin quiz'),
+
+              React.DOM.div({id:'imageDiv'}, null,
+        React.DOM.p(null, '')
+
+        
+      )
       )
     );
   }

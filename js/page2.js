@@ -8,8 +8,8 @@ var PageTwoContent = React.createClass({
         currentPage = 2;
 
         if (!pageTwoAnswered) {
-          document.getElementById('wrong_2_1').style.color = "#ff0000";
-          document.getElementById('right_2').style.color = "#00ff00";
+          document.getElementById('wrong_2_1').style.color = "#FF0000";
+          document.getElementById('right_2').style.color = "#00B233";
           document.getElementById('nextQ_2').style.background = "#33CCFF";
 
         }
@@ -23,7 +23,7 @@ var PageTwoContent = React.createClass({
 
         if (!pageTwoAnswered) {
           document.getElementById('wrong_2_2').style.color = "#ff0000";
-          document.getElementById('right_2').style.color = "#00ff00";
+          document.getElementById('right_2').style.color = "#00B233";
           document.getElementById('nextQ_2').style.background = "#33CCFF";
         }
 
@@ -36,7 +36,7 @@ var PageTwoContent = React.createClass({
 
         if (!pageTwoAnswered) {
           document.getElementById('wrong_2_3').style.color = "#ff0000";
-          document.getElementById('right_2').style.color = "#00ff00";
+          document.getElementById('right_2').style.color = "#00B233";
           document.getElementById('nextQ_2').style.background = "#33CCFF";
         }
 
@@ -48,7 +48,7 @@ var PageTwoContent = React.createClass({
         currentPage = 2;
 
         if (!pageTwoAnswered) {
-          document.getElementById('right_2').style.color = "#00ff00";
+          document.getElementById('right_2').style.color = "#00B233";
           document.getElementById('nextQ_2').style.background = "#33CCFF";
           score++;
           console.log(score);

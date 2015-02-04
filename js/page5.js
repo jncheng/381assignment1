@@ -8,7 +8,7 @@ var PageFiveContent = React.createClass({
 
         if (!pageFiveAnswered) {
           document.getElementById('wrong_5_1').style.color = "#ff0000";
-          document.getElementById('right_5').style.color = "#00ff00";
+          document.getElementById('right_5').style.color = "#00B233";
           document.getElementById('nextQ_5').style.background = "#33CCFF";
         }
         
@@ -21,7 +21,7 @@ var PageFiveContent = React.createClass({
 
         if (!pageFiveAnswered) {
           document.getElementById('wrong_5_2').style.color = "#ff0000";
-          document.getElementById('right_5').style.color = "#00ff00";
+          document.getElementById('right_5').style.color = "#00B233";
           document.getElementById('nextQ_5').style.background = "#33CCFF";
         }
 
@@ -34,7 +34,7 @@ var PageFiveContent = React.createClass({
 
         if (!pageFiveAnswered) {
           document.getElementById('wrong_5_5').style.color = "#ff0000";
-          document.getElementById('right_5').style.color = "#00ff00";
+          document.getElementById('right_5').style.color = "#00B233";
           document.getElementById('nextQ_5').style.background = "#33CCFF";
         }
 
@@ -46,7 +46,7 @@ var PageFiveContent = React.createClass({
         currentPage = 5;
 
         if (!pageFiveAnswered) {
-          document.getElementById('right_5').style.color = "#00ff00";
+          document.getElementById('right_5').style.color = "#00B233";
           document.getElementById('nextQ_5').style.background = "#33CCFF";
           score++;
           console.log(score);
