@@ -117,7 +117,7 @@ var PageOneContent = React.createClass({
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 
         React.DOM.div({id: 'right-col'},null,
-          JQueryMobileButton({id: 'nextQ_1',href: pageHash[generatedPage + 1], onClick: this.handleNext}, '>')
+          JQueryMobileButton({id: 'nextQ_' + generatedPage.toString(),href: pageHash[generatedPage + 1], onClick: this.handleNext}, '>')
         ),
         React.DOM.div({id: 'left-col'},null,
           JQueryMobileButton({id: 'homeQ',href: pageHash[generatedPage - 1], onClick: this.handlePrev}, '<')
