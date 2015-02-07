@@ -71,11 +71,6 @@ var PageFiveContent = React.createClass({
       document.getElementById("readiness").innerHTML = "You are NOT prepared!";
     }
 
-    if (scorePercentage() == 0)
-    {
-      document.getElementById("readiness").className = "HAHA GOOD LUCK!";
-    }
-
   },
 
   render: function() {

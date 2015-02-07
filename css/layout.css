@@ -81,6 +81,16 @@ button{
   font-size: 20px;
 }
 
+#right-col{
+
+  position: absolute;
+  left: 50%;
+  margin-left: 3%;
+  top:73%;
+  width: 42%;
+  
+}
+
 #lastQ{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -134,15 +144,6 @@ button{
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 30px;
-}
-
-#right-col{
-
-  position: absolute;
-  left: 50%;
-  margin-left: 3%;
-  top:73%;
-  width: 42%;
 }
 
 #body-div{

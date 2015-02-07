@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var data = [
 	{
 		home: 'kek'
