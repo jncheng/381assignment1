@@ -3,6 +3,8 @@
 var PageOneContent = React.createClass({
   displayName: 'PageOneContent',
 
+
+
   handleClick1: function(id) {
     console.log("hello");
     currentPage = 1;
@@ -62,7 +64,6 @@ var PageOneContent = React.createClass({
       React.DOM.div({id:'progress'}, null,
 
         //React.DOM.h1(null, 'O o o o o ')
-
         React.DOM.h1(null, 
           
 
@@ -77,7 +78,7 @@ var PageOneContent = React.createClass({
       
       React.DOM.div({id:'body'},null,
 
-        React.DOM.p(null, 'Which belongs in an earthquake emergency supplies package?'),
+        React.DOM.p(null, data[1].question),
 
        
         React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_1', onClick: this.handleClick1},'Meat loaf')),
