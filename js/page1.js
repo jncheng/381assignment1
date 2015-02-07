@@ -1,65 +1,90 @@
 
 /** Application page one component. */
 var PageOneContent = React.createClass({
-  displayName: 'PageOneContent',
+
+  //displayName: data[currentPage].displayName,
 
 
 
   handleClick1: function(id) {
-    console.log("hello");
-    currentPage = 1;
+    
+    //currentPage = 1;
 
-    if (!pageOneAnswered) {
-      document.getElementById('wrong_1_1').style.color = "#ff0000";
-      document.getElementById('right_1').style.color = "#00B233";
-      document.getElementById('nextQ_1').style.background = "#33CCFF";
+    if (!pageVisitedBool[currentPage]) {
+
+      console.log( currentPage.toString() );
+
+      document.getElementById('wrong_' + currentPage.toString() + '_1').style.color = "#ff0000";
+      document.getElementById('right_' + currentPage.toString() ).style.color = "#00B233";
+      document.getElementById('nextQ_' + currentPage.toString() ).style.background = "#33CCFF";
+      
+      currentPage++;
+      console.log( 'currentPage: ' + currentPage.toString() );
     }
     
-    pageOneAnswered = true;
+    pageVisitedBool[currentPage-1] = true;
   },
 
   handleClick2: function(id) {
     console.log("hello");
     currentPage = 1;
 
-    if (!pageOneAnswered) {
-      document.getElementById('wrong_1_2').style.color = "#ff0000";
+    if (!pageVisitedBool[currentPage]) {
+      document.getElementById('wrong_' + currentPage.toString() + '_2').style.color = "#ff0000";
       document.getElementById('right_1').style.color = "#00B233";
       document.getElementById('nextQ_1').style.background = "#33CCFF";
+
+      currentPage++;
+      console.log( currentPage.toString() );
     }
 
-    pageOneAnswered = true;
+    pageVisitedBool[currentPage-1] = true;
   },
 
   handleClick3: function(id) {
     console.log("hello");
     currentPage = 1;
 
-    if (!pageOneAnswered) {
-      document.getElementById('wrong_1_3').style.color = "#ff0000";
+    if (!pageVisitedBool[currentPage]) {
+      document.getElementById('wrong_' + currentPage.toString() + '_3').style.color = "#ff0000";
       document.getElementById('right_1').style.color= "#00B233";
       document.getElementById('nextQ_1').style.background = "#33CCFF";
+
+      currentPage++;
+      console.log( currentPage.toString() );
     }
 
-    pageOneAnswered = true;
+    pageVisitedBool[currentPage-1] = true;
   },
 
   handleClick4: function(id) {
     console.log(score);
     currentPage = 1;
 
-    if (!pageOneAnswered) {
+    if (!pageVisitedBool[currentPage]) {
       document.getElementById('right_1').style.color = "#00B233";
       document.getElementById('nextQ_1').style.background = "#33CCFF";
       score++;
       console.log(score);
+
+      currentPage++;
+      console.log( currentPage.toString() );
     }
 
-    pageOneAnswered = true;
+    pageVisitedBool[currentPage-1] = true;
   },
+
+  // nextPage: function(id) {
+  //   console.log(currentPage);
+  //   currentPage ++;
+  // },
 
 
   render: function() {
+
+    generatedPage++;
+    console.log(generatedPage);
+
     return React.DOM.div({id:'header-div'},null,
       React.DOM.div({id:'progress'}, null,
 
@@ -78,27 +103,27 @@ var PageOneContent = React.createClass({
       
       React.DOM.div({id:'body'},null,
 
-        React.DOM.p(null, data[1].question),
+        React.DOM.p(null, data[generatedPage].question),
 
-       
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_1', onClick: this.handleClick1},'Meat loaf')),
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_2', onClick: this.handleClick2},null, 'Watermelon')),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_' + generatedPage.toString() + '_1', onClick: this.handleClick1}, data[generatedPage].answer1)),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_' + generatedPage.toString() + '_2', onClick: this.handleClick2},null, data[generatedPage].answer2)),
         
          /* right answer*/
-        React.DOM.p({onClick: addScore}, React.DOM.button({className: 'answers',id: 'right_1', onClick: this.handleClick4},null, 'Trail mix')),
+        React.DOM.p({onClick: addScore}, React.DOM.button({className: 'answers',id: 'right_' + generatedPage.toString(), onClick: this.handleClick4},null, data[generatedPage].answer3)),
        
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_1_3', onClick: this.handleClick3},null, 'Pineapple')),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_' + generatedPage.toString() + '_3', onClick: this.handleClick3},null, data[generatedPage].answer4)),
 
         React.DOM.h3(null, ''),
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 
         React.DOM.div({id: 'right-col'},null,
-          JQueryMobileButton({id: 'nextQ_1',href:'#two'}, '>')
+          JQueryMobileButton({id: 'nextQ_1',href: pageHash[generatedPage + 1], onClick: this.handleNext}, '>')
         ),
         React.DOM.div({id: 'left-col'},null,
-          JQueryMobileButton({id: 'homeQ',href:'#home'}, 'Home')
-
+          JQueryMobileButton({id: 'homeQ',href: pageHash[generatedPage - 1], onClick: this.handlePrev}, '<')
         )
+
+        
       //)
       // );
       // return  React.DOM.div({id: 'right-col'},

@@ -28,7 +28,8 @@
 var score = 0;
 var numberOfQuestions = 5;
 
-var currentPage = 0;
+var currentPage = 1;
+var generatedPage = 0;
 var pageOneAnswered = false;
 var pageTwoAnswered = false;
 var pageThreeAnswered = false;
@@ -103,7 +104,7 @@ var App = React.createClass({
     return React.DOM.div({className:'app'},
       JQueryMobilePage({id:'home'}, PageHomeContent(null)),
       JQueryMobilePage({id:'one'}, PageOneContent(null)),
-      JQueryMobilePage({id:'two'}, PageTwoContent(null)),
+      JQueryMobilePage({id:'two'}, PageOneContent(null)),
       JQueryMobilePage({id:'three'}, PageThreeContent(null)),
       JQueryMobilePage({id:'four'}, PageFourContent(null)),
       JQueryMobilePage({id:'five'}, PageFiveContent(null)),

@@ -57,7 +57,13 @@ var PageTwoContent = React.createClass({
         pageTwoAnswered = true;
       },
 
+
+
   render: function() {
+
+    currentPage++;
+    console.log(currentPage);
+
     return React.DOM.div({id:'header-div'},null,
        React.DOM.div({id:'progress'}, null,
       React.DOM.h1(null, 
@@ -76,14 +82,14 @@ var PageTwoContent = React.createClass({
       React.DOM.div({id:'body'},null,
         
         
-        React.DOM.p(null, 'How should you behave during an earthquake?'),
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_1', onClick: this.handleClick1},null, 'Panic and run')),
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_2', onClick: this.handleClick2},null, 'Go on Facebook')),
+        React.DOM.p(null, data[currentPage].question),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_1', onClick: this.handleClick1},null, data[currentPage].answer1)),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_2', onClick: this.handleClick2},null, data[currentPage].answer2)),
         
          /* right answer*/
-        React.DOM.p({onClick: addScore}, React.DOM.button({className: 'answers',id: 'right_2', onClick: this.handleClick4}, null, 'Keep calm')),
+        React.DOM.p({onClick: addScore}, React.DOM.button({className: 'answers',id: 'right_2', onClick: this.handleClick4}, null, data[currentPage].answer3)),
        
-        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_3', onClick: this.handleClick3},null, 'Dance')),
+        React.DOM.p(null, React.DOM.button({className: 'answers',id: 'wrong_2_3', onClick: this.handleClick3},null, data[currentPage].answer4)),
         React.DOM.h3(null, ''),
         //return React.DOM.div(null,
         // return React.DOM.div({id: 'left-col'}, 
