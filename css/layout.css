@@ -5,7 +5,11 @@ body {
   line-height: 1.7;
   margin: 3%;
   padding:3%;
+  text-align: center;
 
+}
+p{
+  text-align: center;
 }
 
 
@@ -34,6 +38,7 @@ h2 {
   margin-top: 15%;
   border-bottom: 1px solid #7B4A12;
   font-size: 1.5em;
+  text-align: center;
 }
 
 h3 {
@@ -177,7 +182,7 @@ button{
 }
 
 #imageDiv {
-  margin-left: -21%;
+  margin-left: -65%;
   margin-right: 10%;
   margin-top: 0%;
   position: absolute;
